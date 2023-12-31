@@ -130,3 +130,6 @@ dist
 .pnp.*
 
 codespin/declarations
+
+env.sh
+devenv/pgdata

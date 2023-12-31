@@ -1,2 +1,8 @@
 # nibbles
-Web Crawler Framework
+
+Web Crawler Framework. 🏗️ Built with [CodeSpin.AI] (https://github.com/codespin-ai/codespin-cli).
+
+
+
+
+
