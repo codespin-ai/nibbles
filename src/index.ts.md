@@ -3,6 +3,8 @@ include:
   - config.ts
 ---
 
+Modify index.ts based on the following spec.
+
 This is the entry point to a CLI app called nibbles.
 
 We need to support the following commands:
@@ -11,9 +13,6 @@ We need to support the following commands:
 
 Use yargs for parsing command line args.
 
-The following args are needed:
-- "-c", is the path to a config file
 
-Call config.load with the filepath. You need to import load.
 
 codespin:include:/codespin/rules/ts-conventions.md
