@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "@types/node": "^20.10.6",
+    "@types/pg-promise": "^5.4.3",
     "@types/yargs": "^17.0.32",
+    "pg-promise": "^11.5.4",
     "yargs": "^17.7.2"
   }
 }

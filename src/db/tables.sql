@@ -1,6 +1,6 @@
 -- Create job table if it does not exist
 CREATE TABLE IF NOT EXISTS job (
-    name BIGINT NOT NULL,
+    name TEXT NOT NULL,
     config TEXT NOT NULL,
     created_at BIGINT NOT NULL,
     tags TEXT NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS job (
 -- Create job_tag table if it does not exist
 -- job_name and key together will be the primary key
 CREATE TABLE IF NOT EXISTS job_tag (
-    job_name BIGINT NOT NULL,
+    job_name TEXT NOT NULL,
     key TEXT NOT NULL,
     value TEXT NOT NULL,
     created_at BIGINT NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS job_tag (
 -- Create link table if it does not exist
 CREATE TABLE IF NOT EXISTS link (
     id BIGINT NOT NULL,
-    job_name BIGINT NOT NULL,
+    job_name TEXT NOT NULL,
     url TEXT NOT NULL,
     parent_id BIGINT,
     created_at BIGINT NOT NULL,
