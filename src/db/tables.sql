@@ -32,8 +32,8 @@ CREATE TABLE IF NOT EXISTS link (
     FOREIGN KEY (parent_id) REFERENCES link (id)
 );
 
--- Create content table if it does not exist
-CREATE TABLE IF NOT EXISTS content (
+-- Create retrieval table if it does not exist
+CREATE TABLE IF NOT EXISTS retrieval (
     id BIGINT NOT NULL,
     link_id BIGINT NOT NULL,
     content TEXT NOT NULL,
@@ -48,10 +48,11 @@ CREATE TABLE IF NOT EXISTS content (
 -- Create error table if it does not exist
 CREATE TABLE IF NOT EXISTS error (
     id BIGINT NOT NULL,
-    content_id BIGINT NOT NULL,
+    retrieval_id BIGINT NOT NULL,
+    created_at BIGINT NOT NULL,
     error_code BIGINT NOT NULL,
     error TEXT NOT NULL,
     error_type TEXT NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (content_id) REFERENCES content (id)
+    FOREIGN KEY (retrieval_id) REFERENCES retrieval (id)
 );

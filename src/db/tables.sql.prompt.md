@@ -32,7 +32,7 @@ job_name and key together will be the primary key
   - retry_count 
   - status, string
 
-4. content
+4. retrieval
   
   Fields:
   - id
@@ -48,7 +48,8 @@ job_name and key together will be the primary key
 
   Fields:
     - id
-    - content_id, fkey to content.id
+    - retrieval_id, fkey to retrieval.id
+    - created_at, bigint
     - error_code
     - error, string
     - error_type, string
