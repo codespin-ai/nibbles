@@ -1,7 +1,10 @@
 import { exception } from "./exception.js";
 import { readJson } from "./files/readJson.js";
 
-export type CrawlerConfig = {};
+export type CrawlerConfig = {
+  name: string;
+  canHandle: (url: string) => boolean;
+};
 
 export type NibblesConfig = {
   crawlers: Array<CrawlerConfig>;
